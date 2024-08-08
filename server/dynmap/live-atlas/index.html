@@ -19,7 +19,7 @@
     <meta name="keywords" content="minecraft, map, dynamic, liveatlas" />
 	<meta name="description" content="Minecraft Dynamic Map" />
 
-    <title>Minecraft Dynamic Map - LiveAtlas</title>
+    <title>Minecraft Dynamic Map</title>
 
     <!-- Remove this if you are using the servers config below -->
     <script src="./standalone/config.js"></script>
@@ -98,71 +98,71 @@
             // If a message you want to translate isn't here, it is likely controlled by dynmap itself
             // see https://github.com/webbukkit/dynmap/wiki/Configuration.txt
             messages: {
-            	chatNoMessages: 'No chat messages yet...',
-                chatTitle: 'Chat',
-                chatLogin: 'Please login to send chat messages',
-                chatSend: 'Send',
-                chatPlaceholder: 'Type your chat message here...',
-                chatErrorUnknown: 'Unexpected error while sending chat message',
-                chatErrorDisabled: 'Chat is not enabled',
-            	serversHeading: 'Servers',
-                markersHeading: 'Markers',
-                markersSearchPlaceholder: 'Search markers...',
-                markersSkeleton: 'No markers exist for the current world',
-                markersSetSkeleton: 'This marker set is empty',
-                markersSearchSkeleton: 'No matching markers found',
-                markersUnnamed: '(Unnamed marker)',
-                worldsSkeleton: 'No maps have been configured',
-                playersSkeleton: 'No players are currently online',
-                playersTitle: 'Click to center on player\nDouble-click to follow player',
-                playersTitleHidden: 'This player is currently hidden from the map\nDouble-click to follow player when they become visible',
-                playersTitleOtherWorld: 'This player is in another world.\nClick to center on player\nDouble-click to follow player',
-                playersSearchPlaceholder: 'Search players...',
-                playersSearchSkeleton: 'No matching players found',
-                followingHeading: 'Following',
-                followingUnfollow: 'Unfollow',
-                followingTitleUnfollow: 'Stop following this player',
-                followingHidden: 'Currently hidden',
-                linkTitle: 'Copy link to current location',
-                loadingTitle: 'Loading...',
-                locationRegion: 'Region',
-                locationChunk: 'Chunk',
-                contextMenuCopyLink: 'Copy link to here',
-                contextMenuCenterHere: 'Center here',
-                toggleTitle: 'Click to toggle this section',
-                mapTitle: 'Map - Use the arrow keys to pan the map',
-                layersTitle: 'Layers',
-                copyToClipboardSuccess: 'Copied to clipboard',
-                copyToClipboardError: 'Unable to copy to clipboard',
+            	chatNoMessages: '没人发信息',
+                chatTitle: '聊天',
+                chatLogin: '只有登录了才能发消息喵~',
+                chatSend: '发送',
+                chatPlaceholder: '聊天信息输在这',
+                chatErrorUnknown: '不知道为什么消息发不出去',
+                chatErrorDisabled: '聊天未启用',
+            	serversHeading: '服务器',
+                markersHeading: '标记',
+                markersSearchPlaceholder: '搜索标记',
+                markersSkeleton: '当前世界没有标记点存在',
+                markersSetSkeleton: '这个标记点是空的',
+                markersSearchSkeleton: '无匹配结果',
+                markersUnnamed: '（未命名标记）',
+                worldsSkeleton: '没有地图被配置',
+                playersSkeleton: '现在没人在线喵！',
+                playersTitle: '单击以定位玩家\n双击以跟随玩家',
+                playersTitleHidden: '该玩家在当前地图上隐藏\n双击可在玩家可见时跟随',
+                playersTitleOtherWorld: '该玩家在另一个世界\n点击以定位到玩家\n双击以跟随玩家',
+                playersSearchPlaceholder: '搜索玩家…',
+                playersSearchSkeleton: '找不到匹配的玩家',
+                followingHeading: '跟随中',
+                followingUnfollow: '取消跟随',
+                followingTitleUnfollow: '停止跟随该玩家',
+                followingHidden: '当前隐藏',
+                linkTitle: '获取当前坐标的网址',
+                loadingTitle: '加载中…',
+                locationRegion: '区域',
+                locationChunk: '区块',
+                contextMenuCopyLink: '复制链接',
+                contextMenuCenterHere: '定位到此处',
+                toggleTitle: '点击以切换此部分',
+                mapTitle: '地图 - 使用方向键移动地图',
+                layersTitle: '图层',
+                copyToClipboardSuccess: '复制到剪贴板',
+                copyToClipboardError: '无法复制到剪贴板',
 
-                loginTitle: 'Login/Register',
-                loginHeading: 'Existing User',
-                loginUsernameLabel: 'Username',
-                loginPasswordLabel: 'Password',
-                loginSubmit: 'Login',
-                loginErrorUnknown: 'Unexpected error while logging in',
-                loginErrorDisabled: 'Logging in is disabled on this server',
-                loginErrorIncorrect: 'Incorrect username or password',
-                loginSuccess: 'Logged in successfully',
+                loginTitle: '登录/注册',
+                loginHeading: '已有账户',
+                loginUsernameLabel: '用户名',
+                loginPasswordLabel: '密码',
+                loginSubmit: '登录',
+                loginErrorUnknown: '登录时出现未知错误',
+                loginErrorDisabled: '登录已禁用',
+                loginErrorIncorrect: '用户名或密码错误',
+                loginSuccess: '登录成功！！',
 
-                registerHeading: 'New User',
-                registerDescription: `Enter your username and password, along with your registration code.
+                registerHeading: '新用户',
+                registerDescription: `分别输入你的用户名、密码和注册码喵！
 
-                        You can get a registration code by running /dynmap webregister in-game.`,
-                registerConfirmPasswordLabel: 'Confirm Password',
-                registerCodeLabel: 'Registration Code',
-                registerSubmit: 'Register',
-                registerErrorUnknown: 'Unexpected error during registration',
-                registerErrorDisabled: 'Registration is disabled on this server',
-                registerErrorVerifyFailed: 'The entered passwords do not match',
-                registerErrorIncorrect: 'Registration failed, please check the entered details are correct',
+                        注册码需要在服务器中获取。在游戏中输入/dynmap webregister可以获得注册码。`,
+                registerConfirmPasswordLabel: '确认密码',
+                registerCodeLabel: '注册码',
+                registerSubmit: '注册',
+                registerErrorUnknown: '注册时出现未知错误',
+                registerErrorDisabled: '注册已禁用',
+                registerErrorVerifyFailed: '前后输入的密码不一致，笨蛋。',
+                registerErrorIncorrect: '注册失败了，检查下输入内容的是否有误喵',
 
-                logoutTitle: 'Logout',
-                logoutErrorUnknown: 'Unexpected error while logging out',
-                logoutSuccess: 'Logged out successfully',
+                logoutTitle: '登出',
+                logoutErrorUnknown: '登出时出现未知错误',
+                logoutSuccess: '已登出',
 
-                closeTitle: 'Close',
-                showMore: 'Show more'
+                closeTitle: '关闭',
+                showMore: '显示更多'
             },
 
             ui: {
@@ -192,39 +192,150 @@
     </script>
 
     <style>
+        /* AurLemon Customize Styles */
+        @font-face {
+            font-family: "Site Wordmark Font";
+            src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/Site_Wordmark_Font.woff2") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Minecraft";
+            src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/Minecraft_Regular.woff2") format('woff2');
+        }
+
+        @font-face {
+            font-family: "JetBrains Mono";
+            src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/JetBrains_Mono.woff2") format('woff2');
+        }
+
+        @font-face {
+            font-family: "MiSans Latin";
+            src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/MiSans_Latin.woff2") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Inter";
+            src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/Inter.woff2") format('woff2');
+        }
+
+        @font-face {
+            font-family: "Oswald";
+            src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/Oswald_Regular.woff2") format('woff2');
+        }
+
+        :root {
+            --font-family: "Inter", "MiSans Latin", "Helvetica Neue", "Helvetica", "Roboto", "BlinkMacSystemFont", "MiSans", "HarmonyOS Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            --color-primary__h: 200;
+            --color-primary__s: 55%;
+            --color-primary__l: 48%;
+            --color-surface-0__s: 3%;
+            --color-surface-0__l: 99%;
+            --color-surface-1__s: 3%;
+            --color-surface-1__l: 95%;
+            --color-surface-2__s: 10%;
+            --color-surface-2__l: 93%;
+            --color-surface-3__s: 10%;
+            --color-surface-3__l: 85%;
+            --color-surface-4__s: 10%;
+            --color-surface-4__l: 74%;
+            --color-primary: hsl(var(--color-primary__h), var(--color-primary__s), var(--color-primary__l));
+            --color-primary--hover: hsl(var(--color-primary__h),var(--color-primary__s),calc(var(--color-primary__l) * 1.2));
+            --color-primary--active: hsl(var(--color-primary__h), var(--color-primary__s), calc(var(--color-primary__l) * 0.8));
+            --color-surface-0: hsl(var(--color-primary__h), var(--color-surface-0__s), var(--color-surface-0__l));
+            --color-surface-1: hsl(var(--color-primary__h), var(--color-surface-1__s), var(--color-surface-1__l));
+            --color-surface-2: hsl(var(--color-primary__h), var(--color-surface-2__s), var(--color-surface-2__l));
+            --color-surface-3: hsl(var(--color-primary__h), var(--color-surface-3__s), var(--color-surface-3__l));
+            --color-surface-4: hsl(var(--color-primary__h), var(--color-surface-4__s), var(--color-surface-4__l));
+            --color-light: var(--color-primary__h), var(--color-surface-0__s), var(--color-surface-0__l);
+            --color-dark: var(--color-primary__h), 20%, 10%;
+            --background-color-primary--hover: hsl(var(--color-primary__h), var(--color-primary__s), 95%);
+            --background-color-primary--active: hsl(var(--color-primary__h), var(--color-primary__s), 90%);
+            --background-color-overlay: hsla(var(--color-primary__h), var(--color-surface-0__s), var(--color-surface-0__l), 0.95);
+            --background-color-overlay--lighter: hsla(var(--color-primary__h), var(--color-surface-0__s), var(--color-surface-0__l), 0.6);
+            --background-light-0: hsla(var(--color-light), 0.1);
+            --background-light-0--active: hsla(var(--color-light), 0.05);
+            --background-light-1: hsla(var(--color-light), 0.3);
+            --background-light-2: hsla(var(--color-light), 0.6);
+            --background-light-2--hover: hsla(var(--color-light), 0.5);
+            --background-light-3: hsla(var(--color-light), 0.75);
+            --background-light-4: hsla(var(--color-light), 0.9);
+            --background-dark-0: hsla(var(--color-dark), 0.1);
+            --background-dark-1: hsla(var(--color-dark), 0.3);
+            --background-dark-2: hsla(var(--color-dark), 0.6);
+            --color-text: hsl(var(--color-primary__h), 29%, 24%);
+            --color-text--emphasized: hsl(var(--color-primary__h), 85%, 5%);
+            --color-text--subtle: hsl(var(--color-primary__h), 30%, 35%);
+            --color-text--weaken: hsl(var(--color-primary__h), 15%, 73%);
+        }
+
+        :root {
+            --color-hydcraft-red: rgb(211, 47, 47);
+            --color-hydcraft-blue: rgb(3, 169, 244);
+            --home-background-status-unknown: #808080;
+            --home-background-status-offline: #ff3c00;
+            --home-background-status-loading: #e4ca23;
+            --home-background-status-online: #008000;
+        }
+
+        * {
+            font-family: var(--font-family);
+        }
+
+        button, [type=button], .leaflet-control-button, .leaflet-control-layers-toggle, .leaflet-control-logo, .leaflet-bar a, .leaflet-control a, .leaflet-control button {
+            font-family: 'JetBrains Mono', sans-serif !important;
+        }
+
+        .map {
+            background-color: var(--background-dark-2) !important;
+        }
+
+        .leaflet-control-coordinates .value, .clock .clock__time {
+            font-family: 'Minecraft', monospace !important;
+        }
+
+        .map .marker .marker__label {
+            padding: 4px 8px;
+            border-radius: 0.5rem;
+            background-color: var(--color-surface-0);
+        }
+    
+        ::selection {
+            background: hsla(var(--color-primary__h), 5%, 54%, 22%);
+        }
+
         /* Theme colours */
         :root {
-            --background-base: #222222; /* Foreground UI elements */
-            --background-dark: #121212; /* Body/Splash screen/Shadows */
-            --background-light: #363636; /* Scrollbars/inputs */
-            --background-error: #771616; /* Errors */
+            --background-base: var(--color-surface-2); /* Foreground UI elements */
+            --background-dark: var(--color-surface-4); /* Body/Splash screen/Shadows */
+            --background-light: var(--color-surface-0); /* Scrollbars/inputs */
+            --background-error: #dd3333; /* Errors */
             --background-marker: var(--background-dark); /* Map markers */
 
             --background-disabled: #555555; /* Disabled controls */
-            --background-hover: #363636; /* :hovered buttons/menu items */
-            --background-active: #6d6d6d; /* Button :active */
-            --background-selected: #BDBDBD; /* Selected buttons/menu items */
+            --background-hover: var(--color-surface-1); /* :hovered buttons/menu items */
+            --background-active: var(--color-surface-0); /* Button :active */
+            --background-selected: var(--color-primary); /* Selected buttons/menu items */
 
-            --outline-focus: #eeeeee; /* :focus outline */
+            --outline-focus: var(--color-primary); /* :focus outline */
 
-            --border-radius: 0.5rem;
-            --border-color: #333333; /* Control borders */
-            --border-error: #cc0e0e;
-            --box-shadow: 2px 2px 0px #111111;
+            --border-radius: 0.75rem;
+            --border-color: var(--color-surface-3); /* Control borders */
+            --border-error: #dd3333;
+            --box-shadow: 0px 2px 12px var(--background-dark-1);
 
-            --text-base: rgba(255, 255, 255, 0.7); /* Normal text */
-            --text-emphasis: rgba(255, 255, 255, 0.87); /* Chat messages/:focus inputs */
-            --text-subtle: rgba(255, 255, 255, 0.5); /* Skeletons/secondary text */
+            --text-base: var(--color-text); /* Normal text */
+            --text-emphasis: var(--color-text--emphasized); /* Chat messages/:focus inputs */
+            --text-subtle: var(--color-text--subtle); /* Skeletons/secondary text */
             --text-disabled: var(--text-subtle); /* Disabled controls */
             --text-marker: var(--text-base); /* Map markers */
 
             --text-hover: var(--text-base); /* Text in :hover buttons */
             --text-active: var(--text-base); /* Text in :active buttons */
             --text-selected: var(--background-base); /* Text in selected buttons */
-            --text-shadow: 0.1rem 0.1rem #000000; /* Text in selected buttons */
+            --text-shadow: 0 0 transparent; /* Text in selected buttons */
 
-            --text-night: #ddffff; /* Clock time at night */
-            --text-day: #ffdd33; /* Clock time in day */
+            --text-night: var(--color-text--weaken); /* Clock time at night */
+            --text-day: var(--color-text--subtle); /* Clock time in day */
         }
 
         @keyframes fade {
@@ -239,7 +350,7 @@
 
         * {
             scrollbar-width: thin;
-            scrollbar-color: var(--background-light) transparent;
+            scrollbar-color: var(--color-surface-3) transparent;
         }
 
         *:hover, *:focus-within {
@@ -284,16 +395,7 @@
         }
 
         body {
-            font-family: Raleway,
-            system-ui,
-            -apple-system,
-            'Segoe UI',
-            Roboto,
-            Helvetica,
-            Arial,
-            sans-serif,
-            'Apple Color Emoji',
-            'Segoe UI Emoji';
+            font-family: var(--font-family);
             color: var(--text-base);
             text-shadow: var(--text-shadow);
             letter-spacing: 0.02rem;
@@ -345,7 +447,7 @@
         }
 
         #splash__error-message {
-            font-family: monospace;
+            font-family: 'JetBrains Mono', monospace;
             background-color: var(--background-error);
             padding: 1rem 1.5rem;
             border-radius: var(--border-radius);
@@ -402,6 +504,10 @@
                 document.getElementById('splash__spinner').style.visibility = 'hidden';
             }
         });
+    </script>
+
+    <script>
+        console.info(`偷看F12？但是没关系，欢迎加入氢气工艺。\n欢迎加入氢气工艺技术团队 => Github: github.com/Hydroline`)
     </script>
   </body>
 </html>

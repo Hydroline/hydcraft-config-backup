@@ -294,11 +294,17 @@
         }
 
         .map .marker .marker__label {
-            padding: 4px 8px;
-            border-radius: 0.5rem;
-            background-color: var(--color-surface-0);
+            padding: 4px 8px !important;
+            border-radius: 0.5rem !important;
+            background-color: var(--color-surface-0) !important;
         }
     
+        .modal.modal--backdrop {
+            background-color: var(--background-dark-2) !important;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
         ::selection {
             background: hsla(var(--color-primary__h), 5%, 54%, 22%);
         }

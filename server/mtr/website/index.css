@@ -1,0 +1,448 @@
+@font-face {
+    font-family: "Site Wordmark Font";
+    src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/Site_Wordmark_Font.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/Minecraft_Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/JetBrains_Mono.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "MiSans Latin";
+    src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/MiSans_Latin.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/Inter.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("https://h2-1254268741.cos.ap-shanghai.myqcloud.com/font/Oswald_Regular.woff2") format('woff2');
+}
+
+* {
+	font-family: var(--font-family);
+	margin: 0;
+	user-select: none;
+}
+
+:root {
+    --font-family: "Inter", "MiSans Latin", "Helvetica Neue", "Helvetica", "Roboto", "BlinkMacSystemFont", "MiSans", "HarmonyOS Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    --color-primary__h: 200;
+    --color-primary__s: 55%;
+    --color-primary__l: 48%;
+    --color-surface-0__s: 3%;
+    --color-surface-0__l: 99%;
+    --color-surface-1__s: 3%;
+    --color-surface-1__l: 95%;
+    --color-surface-2__s: 10%;
+    --color-surface-2__l: 93%;
+    --color-surface-3__s: 10%;
+    --color-surface-3__l: 85%;
+    --color-surface-4__s: 10%;
+    --color-surface-4__l: 74%;
+    --color-primary: hsl(var(--color-primary__h), var(--color-primary__s), var(--color-primary__l));
+    --color-primary--hover: hsl(var(--color-primary__h),var(--color-primary__s),calc(var(--color-primary__l) * 1.2));
+    --color-primary--active: hsl(var(--color-primary__h), var(--color-primary__s), calc(var(--color-primary__l) * 0.8));
+    --color-surface-0: hsl(var(--color-primary__h), var(--color-surface-0__s), var(--color-surface-0__l));
+    --color-surface-1: hsl(var(--color-primary__h), var(--color-surface-1__s), var(--color-surface-1__l));
+    --color-surface-2: hsl(var(--color-primary__h), var(--color-surface-2__s), var(--color-surface-2__l));
+    --color-surface-3: hsl(var(--color-primary__h), var(--color-surface-3__s), var(--color-surface-3__l));
+    --color-surface-4: hsl(var(--color-primary__h), var(--color-surface-4__s), var(--color-surface-4__l));
+    --color-light: var(--color-primary__h), var(--color-surface-0__s), var(--color-surface-0__l);
+    --color-dark: var(--color-primary__h), 20%, 10%;
+    --background-color-primary--hover: hsl(var(--color-primary__h), var(--color-primary__s), 95%);
+    --background-color-primary--active: hsl(var(--color-primary__h), var(--color-primary__s), 90%);
+    --background-color-overlay: hsla(var(--color-primary__h), var(--color-surface-0__s), var(--color-surface-0__l), 0.95);
+    --background-color-overlay--lighter: hsla(var(--color-primary__h), var(--color-surface-0__s), var(--color-surface-0__l), 0.6);
+    --background-light-0: hsla(var(--color-light), 0.1);
+    --background-light-0--active: hsla(var(--color-light), 0.05);
+    --background-light-1: hsla(var(--color-light), 0.3);
+    --background-light-2: hsla(var(--color-light), 0.6);
+    --background-light-2--hover: hsla(var(--color-light), 0.5);
+    --background-light-3: hsla(var(--color-light), 0.75);
+    --background-light-4: hsla(var(--color-light), 0.9);
+    --background-dark-0: hsla(var(--color-dark), 0.1);
+    --background-dark-1: hsla(var(--color-dark), 0.3);
+    --background-dark-2: hsla(var(--color-dark), 0.6);
+    --color-text: hsl(var(--color-primary__h), 29%, 24%);
+    --color-text--emphasized: hsl(var(--color-primary__h), 85%, 5%);
+    --color-text--subtle: hsl(var(--color-primary__h), 30%, 35%);
+    --color-text--weaken: hsl(var(--color-primary__h), 15%, 73%);
+}
+
+:root {
+    --backgroundColor: #fcfcfd;
+    --backgroundHover: #f2f2f3;
+    --boxBorder: #3791be;
+    --textColorDisabled: #b0bec4;
+    --textColorGray: #3e6274;
+    --textColor: #2b434f;
+}
+
+.dark_theme {
+    --backgroundColor: #12222b;
+    --backgroundHover: #273841;
+    --boxBorder: #3791be;
+    --textColorDisabled: #b0bec4;
+    --textColorGray: #f2f2f3;
+    --textColor: #fcfcfd;
+}
+
+body {
+	background-color: var(--backgroundColor);
+}
+
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+label {
+	display: none;
+}
+
+input {
+	background-color: transparent;
+	border: none;
+	font-size: 1em;
+	margin: 0;
+	outline-width: 0;
+	padding: 0;
+	text-align: left;
+}
+
+h1, h2, h3, h4 {
+	line-height: 1.2em;
+	text-align: center;
+	white-space: break-spaces;
+	width: 100%;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+h4 {
+	color: var(--textColorGray);
+	font-size: 0.8em;
+}
+
+img {
+	width: 3em;
+	height: 3em;
+}
+
+#legend {
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 24em;
+}
+
+#search {
+	top: 0;
+	right: 0;
+	width: 24em;
+}
+
+#station_arrivals {
+	padding: 0.4em 0.2em 0 0.2em;
+}
+
+#loading.material-icons {
+	color: var(--textColorDisabled);
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.box {
+	background: var(--backgroundColor);
+	border: 0.2em solid var(--boxBorder);
+	border-radius: 0.6em;
+	box-sizing: border-box;
+	margin: 1em;
+	padding: 0.4em;
+	position: fixed;
+	white-space: nowrap;
+}
+
+.text {
+	color: var(--textColor);
+}
+
+.text_disabled {
+	color: var(--textColorDisabled);
+}
+
+.text_box {
+	width: 100%;
+}
+
+.player {
+	align-items: center;
+	display: flex;
+	overflow: hidden;
+}
+
+.player_route {
+	display: flex;
+	flex-direction: column;
+	height: 3em;
+	margin-left: 0.5em;
+}
+
+.version {
+	color: var(--textColorGray);
+	font-size: 0.6em;
+    font-family: 'JetBrains Mono';
+}
+
+.search_top {
+	align-items: center;
+	display: flex;
+	height: 2em;
+	overflow: hidden;
+}
+
+.search_results {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.search_results_directions {
+	padding: 0 0 0 2em;
+}
+
+.info_top {
+	display: flex;
+}
+
+.info_middle {
+	align-content: center;
+	align-self: center;
+	display: flex;
+	padding: 0.5em 0 0 0;
+}
+
+.info_center {
+	display: flex;
+	flex-direction: column;
+}
+
+.info_name {
+	width: 100%;
+}
+
+.info_line {
+	border-radius: 0.2em;
+	min-height: 0.4em;
+	margin: 0.6em 0.2em;
+}
+
+.arrival {
+	align-items: center;
+	display: flex;
+	height: 1em;
+	margin: 0.2em;
+}
+
+.arrival_text {
+	color: var(--textColorGray);
+	font-size: 0.8em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.arrival_text.tight {
+	font-size: 1em;
+}
+
+.route_station_name {
+	align-items: center;
+	display: flex;
+	padding: 0 0 0 2.4em;
+	position: relative;
+}
+
+.route_station_name_inner {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.route_duration {
+	align-items: center;
+	color: var(--textColorDisabled);
+	display: flex;
+	padding: 0 0 0 2.4em;
+	position: relative;
+}
+
+.route_duration > .material-icons {
+	color: var(--textColorDisabled);
+}
+
+.station_list {
+	overflow: hidden;
+	padding: 0.5em 0;
+	position: relative;
+}
+
+.route_segment {
+	background-clip: content-box;
+	padding: 0 1em;
+	left: 1.2em;
+	top: 0.75em;
+	position: absolute;
+	width: 0.4em;
+	height: 1.5em;
+	transform: translate(-50%, -50%);
+}
+
+.route_segment.top {
+	height: 0.75em;
+	padding: 0.75em 1em 0 1em;
+}
+
+.route_segment.bottom {
+	height: 0.75em;
+	padding: 0 1em 0.75em 1em;
+}
+
+.route_segment.walk {
+	background-color: var(--boxBorder);
+	width: 0.2em;
+}
+
+.route_segment_name {
+	overflow: hidden;
+	width: 100%;
+}
+
+.route_segment_time {
+	align-self: center;
+	font-size: small;
+	padding: 0 0.4em;
+	text-align: right;
+}
+
+.station_circle {
+	background-color: var(--backgroundColor);
+	border: 0.15em solid;
+	border-color: var(--textColor);
+	border-radius: 1em;
+	box-sizing: border-box;
+	left: 1.2em;
+	top: 0.75em;
+	position: absolute;
+	width: 0.8em;
+	height: 0.8em;
+	transform: translate(-50%, -50%);
+}
+
+.platform_circle {
+	border-radius: 1em;
+	box-sizing: border-box;
+	color: white;
+	height: 1.5em;
+	min-width: 1.5em;
+	padding: 0 0.4em;
+	text-align: center;
+	text-shadow: 0 0 0.1em black;
+}
+
+.clickable {
+	cursor: pointer;
+	padding: 0 0.2em;
+}
+
+.clickable:hover {
+	color: var(--textColor);
+	background: var(--backgroundHover);
+}
+
+.clickable.selected {
+	background: var(--boxBorder);
+}
+
+.left_align {
+	float: left;
+}
+
+.right_align {
+	float: right;
+}
+
+.station {
+	display: inline-block;
+	border-radius: 0.2em;
+	height: 0.4em;
+	width: 0.4em;
+	margin: 0.2em 0.4em 0.2em 0.2em;
+}
+
+.line {
+	display: inline-block;
+	border-radius: 0.2em;
+	height: 0.4em;
+	width: 3em;
+	margin: 0.2em 0.4em 0.2em 0;
+}
+
+.spacer {
+	background-color: var(--color-surface-3);
+	border-radius: 0.1em;
+	height: 1px;
+	margin: 0.2em 0;
+}
+
+.spacer.padded {
+	background-clip: content-box;
+	padding: 0 0 0.5em 0;
+}
+
+.material-icons {
+	color: var(--textColorGray);
+	margin: 0;
+	max-height: 1em;
+	padding: 0.2em;
+	vertical-align: middle;
+}
+
+.material-icons.tight {
+	padding: 0;
+}
+
+.material-icons.large {
+	font-size: 4em;
+	text-align: center;
+}
+
+.material-icons.small {
+	font-size: 1em;
+}

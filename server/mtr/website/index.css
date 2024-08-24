@@ -198,6 +198,10 @@ img {
 	white-space: nowrap;
 }
 
+.player.text > span {
+	font-family: 'Minecraft';
+}
+
 .text {
 	color: var(--textColor);
 }

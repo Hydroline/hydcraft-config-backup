@@ -188,9 +188,7 @@ img {
 }
 
 .box {
-	background: var(--background-light-4);
-	backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(16px);
+	background: var(--backgroundColor);
 	border: 0.2em solid var(--boxBorder);
 	border-radius: 0.6em;
 	box-sizing: border-box;
